@@ -8,7 +8,7 @@ namespace PhoneBook.Parser
     {
         public ParseResult Parse(string input)
         {
-            var splited = input.Split(' ', StringSplitOptions.RemoveEmptyEntries & StringSplitOptions.TrimEntries);
+            var splited = input.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries & StringSplitOptions.TrimEntries);
 
             var parsedRow = new ParsedRow();
 
